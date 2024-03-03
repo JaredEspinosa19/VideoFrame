@@ -13,13 +13,13 @@ using namespace cv;
 
 vector<string> videoFiles(string);
 vector<string> getWords(string, string);
-void saveFrames(const vector<Mat>& frames, const vector<int>& n_frames, const vector<vector<string>>& sequence, const string path);
+void saveFrames(const vector<Mat>&, const vector<int>&, const vector<vector<string>>&, const string);
 vector<double> getIntervals(string, string);
 vector<string> getGroups(string);
-void createDirectories(const string path, const vector<vector<string>>& groups);
-void getFrames(const string videoPath, vector<Mat>& frames, vector<int>& n_frames, const vector<double>& interval);
-bool createDirectory(const string& path);
-void startProcess(const string& path);
+void createDirectories(const string, const vector<vector<string>>&);
+void getFrames(const string, vector<Mat>&, vector<int>&, const vector<double>&);
+bool createDirectory(const string&);
+void startProcess(const string&);
 
 int main() {
 
